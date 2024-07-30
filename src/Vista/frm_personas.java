@@ -56,65 +56,107 @@ DefaultTableModel tbl_model;
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lbl_titulo_clientes.setFont(new java.awt.Font("Segoe UI Variable", 1, 18)); // NOI18N
-        lbl_titulo_clientes.setForeground(new java.awt.Color(0, 51, 255));
+        pn_clientes.setBackground(new java.awt.Color(204, 204, 204));
+        pn_clientes.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        lbl_titulo_clientes.setFont(new java.awt.Font("Segoe UI Variable", 1, 48)); // NOI18N
         lbl_titulo_clientes.setText("Formulario Clientes");
 
+        lbl_nit.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         lbl_nit.setText("NIT");
+        lbl_nit.setBorder(javax.swing.BorderFactory.createCompoundBorder());
+        lbl_nit.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        tf_nit.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tf_nit.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        tf_nit.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         tf_nit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_nitActionPerformed(evt);
             }
         });
 
+        lbl_nombres.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         lbl_nombres.setText("NOMBRES");
+        lbl_nombres.setBorder(javax.swing.BorderFactory.createCompoundBorder());
+        lbl_nombres.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        tf_nombres.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tf_nombres.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        tf_nombres.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         tf_nombres.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_nombresActionPerformed(evt);
             }
         });
 
+        lbl_apellidos.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         lbl_apellidos.setText("APELLIDOS");
+        lbl_apellidos.setBorder(javax.swing.BorderFactory.createCompoundBorder());
+        lbl_apellidos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        tf_apellidos.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tf_apellidos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        tf_apellidos.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         tf_apellidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_apellidosActionPerformed(evt);
             }
         });
 
+        lbl_direccion.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         lbl_direccion.setText("DIRECCION");
+        lbl_direccion.setBorder(javax.swing.BorderFactory.createCompoundBorder());
+        lbl_direccion.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        tf_direccion.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tf_direccion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        tf_direccion.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         tf_direccion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_direccionActionPerformed(evt);
             }
         });
 
+        lbl_telefono.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         lbl_telefono.setText("TELEFONO");
+        lbl_telefono.setBorder(javax.swing.BorderFactory.createCompoundBorder());
+        lbl_telefono.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        tf_telefono.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tf_telefono.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        tf_telefono.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         tf_telefono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_telefonoActionPerformed(evt);
             }
         });
 
+        lbl_fdn.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         lbl_fdn.setText("FECHA DE NACIMIENTO");
+        lbl_fdn.setBorder(javax.swing.BorderFactory.createCompoundBorder());
+        lbl_fdn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        tf_fdn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tf_fdn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        tf_fdn.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         tf_fdn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_fdnActionPerformed(evt);
             }
         });
 
+        btn_guardar.setBackground(new java.awt.Color(153, 153, 153));
+        btn_guardar.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         btn_guardar.setText("CREAR");
+        btn_guardar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn_guardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_guardarActionPerformed(evt);
             }
         });
 
+        tbl_clientes.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tbl_clientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -128,7 +170,10 @@ DefaultTableModel tbl_model;
         ));
         spn_tabla.setViewportView(tbl_clientes);
 
+        btn_modificar.setBackground(new java.awt.Color(153, 153, 153));
+        btn_modificar.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         btn_modificar.setText("MODIFICAR");
+        btn_modificar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn_modificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_modificarActionPerformed(evt);
@@ -142,72 +187,74 @@ DefaultTableModel tbl_model;
             .addGroup(pn_clientesLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pn_clientesLayout.createSequentialGroup()
-                        .addComponent(lbl_fdn)
-                        .addGap(27, 27, 27)
-                        .addComponent(tf_fdn, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btn_guardar))
+                    .addComponent(spn_tabla, javax.swing.GroupLayout.DEFAULT_SIZE, 1052, Short.MAX_VALUE)
                     .addGroup(pn_clientesLayout.createSequentialGroup()
                         .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbl_nombres)
-                            .addComponent(lbl_apellidos)
-                            .addComponent(lbl_direccion)
+                            .addComponent(lbl_fdn, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lbl_telefono)
-                            .addComponent(lbl_nit))
-                        .addGap(51, 51, 51)
+                            .addComponent(lbl_direccion)
+                            .addComponent(lbl_apellidos)
+                            .addComponent(lbl_nit)
+                            .addComponent(lbl_nombres))
+                        .addGap(36, 36, 36)
                         .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tf_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(pn_clientesLayout.createSequentialGroup()
-                                .addComponent(tf_nit, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn_modificar, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(pn_clientesLayout.createSequentialGroup()
-                                .addGap(209, 209, 209)
-                                .addComponent(lbl_titulo_clientes))
-                            .addComponent(tf_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_apellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_nombres, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(spn_tabla, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(270, Short.MAX_VALUE))
+                                .addComponent(btn_guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btn_modificar, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(tf_nombres, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_nit, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(tf_fdn, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(tf_apellidos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
+                                .addComponent(tf_direccion, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(tf_telefono, javax.swing.GroupLayout.Alignment.LEADING)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(pn_clientesLayout.createSequentialGroup()
+                .addGap(292, 292, 292)
+                .addComponent(lbl_titulo_clientes, javax.swing.GroupLayout.PREFERRED_SIZE, 455, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pn_clientesLayout.setVerticalGroup(
             pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pn_clientesLayout.createSequentialGroup()
+                .addContainerGap(7, Short.MAX_VALUE)
+                .addComponent(lbl_titulo_clientes, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pn_clientesLayout.createSequentialGroup()
-                        .addGap(58, 58, 58)
-                        .addComponent(lbl_titulo_clientes))
-                    .addGroup(pn_clientesLayout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(tf_nit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbl_nit)
-                            .addComponent(btn_modificar, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pn_clientesLayout.createSequentialGroup()
+                        .addComponent(lbl_nit)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tf_nombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbl_nombres))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lbl_nombres))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pn_clientesLayout.createSequentialGroup()
+                        .addComponent(tf_nit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(tf_nombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tf_apellidos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_apellidos, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pn_clientesLayout.createSequentialGroup()
                         .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lbl_apellidos)
-                            .addComponent(tf_apellidos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lbl_direccion)
-                            .addComponent(tf_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lbl_telefono)
-                            .addComponent(tf_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lbl_fdn)
-                            .addComponent(tf_fdn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn_guardar))))
+                            .addComponent(tf_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lbl_direccion))
+                        .addGap(14, 14, 14)
+                        .addComponent(lbl_telefono))
+                    .addComponent(tf_telefono, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(spn_tabla, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(142, Short.MAX_VALUE))
+                .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_fdn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tf_fdn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(pn_clientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_guardar)
+                    .addComponent(btn_modificar, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addComponent(spn_tabla, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         tp_principal.addTab("Clientes", pn_clientes);
@@ -221,7 +268,7 @@ DefaultTableModel tbl_model;
         pn_empleadosLayout.setHorizontalGroup(
             pn_empleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pn_empleadosLayout.createSequentialGroup()
-                .addContainerGap(502, Short.MAX_VALUE)
+                .addContainerGap(662, Short.MAX_VALUE)
                 .addComponent(lbl_titulo_empleados)
                 .addGap(223, 223, 223))
         );
@@ -229,7 +276,7 @@ DefaultTableModel tbl_model;
             pn_empleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pn_empleadosLayout.createSequentialGroup()
                 .addComponent(lbl_titulo_empleados)
-                .addGap(0, 466, Short.MAX_VALUE))
+                .addGap(0, 634, Short.MAX_VALUE))
         );
 
         tp_principal.addTab("Empleados", pn_empleados);
