@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Vista;
+package modelo;
 
 /**
  *
@@ -61,9 +61,9 @@ public class Persona {
         this.fecha = fecha;
     }
     //metodos crud
-    protected String [] crear(){return null;}
+    protected void [] crear(){}
     protected void leer(){}
-    protected void actualizar(){}
+    public void actualizar(){}
     protected void eliminar(){}
     
     

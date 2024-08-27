@@ -2,8 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit este template
  */
-package Vista;
-
+package modelo;
+import java.sql.PreparedStatement;
 /**
  *
  * @author Anthony Giron
@@ -33,10 +33,10 @@ public class Cliente extends Persona {
             datos[0] = this.getNit();
             datos[1] = this.getNombres();
             datos[2] = this.getApellidos();
-            datos[3] = this.getDireccion(); // Corregido el índice para la dirección
-            datos[4] = this.getTelefono(); // Añadido teléfono
+            datos[3] = this.getDireccion(); 
+            datos[4] = this.getTelefono(); 
             datos[5] = this.getFecha();
-            return datos; // Devuelve el array de datos
+            return datos;
         } catch (Exception ex) {
             System.out.println("Hay un problema: " + ex.getMessage());
             return null;
